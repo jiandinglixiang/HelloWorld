@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+</body>
+<script src="doc_C.min.js"></script>
+a:1
+<script>
+  // Function.prototype.dog_C = function () {
+  //   return Object
+  // }
+  Function.prototype.dog_C = function () {
+    return new Function()
+  }
+
+  function f1 (a, b, c, d, e) {
+    f1.dog_C(arguments)({
+      a: f1,
+      b: {
+        a: 1, b: {
+          c: function check (val) {
+            // console.log(val)
+            return true
+          }
+        }
+      },
+      c: null,
+      d: String,
+      e: Number,
+      f: Boolean,
+      g: Object,
+      h: Array,
+      i: Function,
+      j: Function,
+      k: Function,
+      l: Symbol,
+      m: {},
+      n: {},
+      o: {}
+    })
+  }
+
+  console.time()
+  for (let i = 0; i < 100; i++) {
+    f1({
+      a: f1,
+      b: { a: 1, b: { c: undefined } },
+      c: null,
+      d: 'String',
+      e: 1,
+      f: !0,
+      g: {},
+      h: [],
+      i: function (val) {
+        return val > 1
+      },
+      j: function check () {
+        return val > 8
+      },
+      k: Function,
+      l: Symbol('1231231'),
+      m: {},
+      n: {},
+      o: {}
+    })
+  }
+  console.timeEnd()
+</script>
+</html>
