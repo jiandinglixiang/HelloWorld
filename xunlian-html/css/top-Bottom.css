@@ -1,0 +1,266 @@
+/*全局内容*/
+#top-bottom{
+    width: 1190px;
+    margin: 10px auto;
+
+}
+/*从上往下一共7个大块*/
+/*第一分类块/我常逛的/时尚/品质/特色/实惠/猜你喜欢*/
+
+/*1分类详情开始*/
+#top-bottom #fl{
+    height: 598px;
+    /*background-color:  #1baef2;*/
+}
+/*左边开始*/
+#top-bottom #fl .fl-left{
+    width: 890px;
+    height: 598px;
+    /*background-color:#F22E00;*/
+    float: left;
+}
+/*左边大块的上开始*/
+#top-bottom #fl .fl-left .fl-left-top{
+    width: 890px;
+    height: 511px;
+    /*background-color: #ffc92d;*/
+}
+/*分类条开始*/
+#top-bottom #fl .fl-left .fl-left-top .left{
+    width: 190px;
+    height: 515px;
+    position: relative;
+    top: -44px;
+    background-color: #FF6537;
+    float: left;
+}
+#top-bottom #fl .fl-left .fl-left-top .left .top,#top-bottom #fl .fl-left .fl-left-top .left .top div{
+    width: 190px;
+    height: 34px;
+    background-color: #FF6537;
+
+}
+#top-bottom #fl .fl-left .fl-left-top .left .top h3{
+    line-height: 34px;
+    text-indent: 10px;
+    color: #FFFFFF;
+    float: left;
+}
+#top-bottom #fl .fl-left .fl-left-top .left .top img{
+    float: right
+}
+#top-bottom #fl .fl-left .fl-left-top .left ul{
+    height: 481px;
+    width: 190px;
+}
+#top-bottom #fl .fl-left .fl-left-top .left ul li div{
+    width:190px;
+    height:30px;
+    text-align: left;
+    color:#FFFFFF ;
+    line-height: 30px;
+    text-indent: 11px;
+}
+#top-bottom #fl .fl-left .fl-left-top .left ul li div a{
+    color:#FFFFFF ;
+    line-height: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    -font-size: 10px;
+}
+#top-bottom #fl .fl-left .fl-left-top .left ul li div:hover{
+    background-color: #F94A14;
+
+
+} #top-bottom #fl .fl-left .fl-left-top .left ul li div .leftspan:hover{
+      color:#FFFFFF;
+  }
+#top-bottom #fl .fl-left .fl-left-top .left ul li div .leftspan{
+    color:#FF905B ;
+}
+#top-bottom #fl .fl-left .fl-left-top .left ul li div .rightspan{
+    position: relative;
+    right: 5px;
+    float: right;
+    -float: none;
+}
+
+#top-bottom #fl .fl-left .fl-left-top .left .bottom img{
+    width: 190px;
+    height: 40px;
+}
+
+/*分类条结束*/
+#top-bottom #fl .fl-left .fl-left-top .centre{
+    width: 520px;
+    height: 511px;
+    padding-left: 10px;
+    padding-right: 10px;
+    *padding-left: 0px;
+    *padding-right: 0px;
+    float: left;
+    /*background-color: #ff12ae;*/
+}
+/*中间图片轮播区*/
+#top-bottom #fl .fl-left .fl-left-top .centre .top1{
+    height:280px ;
+    width: 520px;
+
+}
+
+#top-bottom #fl .fl-left .fl-left-top .centre .centre2{
+    height: 28px;
+    width: 520px;
+    border-bottom: 2px solid #C12C26;
+    text-align: left;
+    line-height: 35px;
+}
+/*中间细节*/
+#top-bottom #fl .fl-left .fl-left-top .centre .centre2 img{
+    position: relative;
+    bottom: -2px;
+    left: -3px;
+    *bottom: 0px;
+    *left: 0px;
+}
+#top-bottom #fl .fl-left .fl-left-top .centre .centre2 .tmbk{
+    line-height: 40px;
+    font-size: 14px ;
+    font-weight: 700;
+    color: #3C3C3C;
+}
+#top-bottom #fl .fl-left .fl-left-top .centre .centre2 .rmpp{
+    padding-left: 6px;
+}
+#top-bottom #fl .fl-left .fl-left-top .centre .centre2 .right{
+    height: 28px;
+    float: right;
+    position: relative;
+    right: -137px;
+    bottom: -5px;
+    *right: 0px;
+    *bottom: 0px;
+    *display: none;
+}
+
+
+#top-bottom #fl .fl-left .fl-left-top .centre .bottom3{
+    height: 201px;
+    width: 520px;
+    background-color: #FFFFFF;
+
+}#top-bottom #fl .fl-left .fl-left-top .centre .bottom3 a{
+     float: left;
+    display: block;
+    width: 129px;
+    height: 56px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #EBEBEB;  border-right: 1px solid #EBEBEB;
+
+ }#top-bottom #fl .fl-left .fl-left-top .centre .bottom3 img{
+    width:84px;
+    height:42px;
+    padding-top: 10px;
+   }
+
+
+
+/*中间图片轮播区结束*/
+#top-bottom #fl .fl-left .fl-left-top .right{
+    width: 160px;
+    height: 511px;
+    float: right;
+    /*!*background-color: #ff12ae;*!280 231*/
+}
+#top-bottom #fl .fl-left .fl-left-top .right .top-one{
+    width: 160px;
+    height: 280px;
+}
+#top-bottom #fl .fl-left .fl-left-top .right .top-two{
+    width: 160px;
+    height:231px;
+
+}
+#top-bottom #fl .fl-left .fl-left-top .right .top-two h5{
+    height:30px;
+    font-size: 12px;
+    line-height: 40px;
+    color: #B5ABBF;
+    text-align: left;
+}
+
+/*左边大块的下开始*/
+#top-bottom #fl .fl-left .fl-left-bottom{
+    /*float: left;*/
+    width: 890px;
+    height:76px;
+    margin-top: 10px;
+    /*background-color: #82ffe2;*/
+}
+/*左边结束*/
+
+
+
+
+
+/*分类详情页右边开始*/
+#top-bottom #fl .fl-right{
+    width: 270px;
+    height:598px;
+    background-color:  #1aff00;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*1结束*/
+
+/*2我常逛的开始*/
+/*2结束*/
+
+/*3时尚开始*/
+/*3结束*/
+
+/*4品质开始*/
+/*4结束*/
+
+/*5特色开始*/
+/*5结束*/
+
+/*6实惠开始*/
+/*6结束*/
+
+/*7猜你喜欢开始*/
+/*7结束*/

@@ -1,0 +1,175 @@
+#xiugai{
+    width: 100%;
+    height: 90px;
+    padding-top: 30px;
+    padding-bottom: 9px;
+    background-color: #FFFFFF;
+}
+#top2{
+    width: 1190px;
+    margin: 0 auto;
+    height: 90px;
+
+}
+#top2 .left{
+    float: left;
+    width: 190px;
+    height: 80px;
+    padding-top: 10px;
+
+}
+#top2 .left a{
+    padding-left: 22px;
+ }
+
+#top2 .centre{
+    width: 666px;
+    height: 90px;
+    float: left;
+    padding-left: 74px;
+}
+
+#top2 .centre .top-a{
+    width: 663px;
+    height: 25px;
+}
+/*#top2 .centre .top-a ul{*/
+   /*float: left;*/
+     /*}*/
+#top2 .centre .top-a ul li{
+    float: left;
+    line-height: 25px;
+    width: 50px;
+    height: 25px;
+    color: #FF602F;
+    font-weight: 400;
+}
+/*#top2 .centre .top-a ul #bb{*/
+
+
+/*}*/
+#top2 .centre .top-a ul #bb{
+    background-color: #FF5400;
+    color: #FFFFFF;
+}
+/*#top2 .centre .top-a ul #tm{*/
+    /*color: #FF602F;*/
+/*}*/
+/*#top2 .centre .top-a ul #dp{*/
+
+    /*color: #FF602F;*/
+/*}*/
+/*搜索框开始*/
+
+
+#top2 .centre  .centre-b .srk{
+    width: 500px;
+    height: 34px;
+    border-bottom: 3px solid #FF5400;
+    border-left: 3px solid #FF5400;
+    border-top: 3px solid #FF5400;
+    float: left;
+}
+#top2 .centre  .centre-b .ss{
+    width: 121px;
+    height: 40px;
+    float: left;
+    background-color:#FF5400;
+    /*line-height: 40px;*/
+    font-weight: 700;
+    font-size: 18px;
+    color:#ffffff ;
+    margin-right: 1px;
+}
+#top2 .centre  .centre-b .gjss{
+     float: left;
+     width: 34px;
+    height: 40px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #555555;
+    padding-left: 4px;
+    /*text-align: center;*/
+ }
+#top2 .centre  .centre-b .gjss a:hover{
+    color:#FF4400 ;
+}
+#top2 .centre .centre-b{
+    width: 666px;
+    height: 40px;
+
+
+}
+#top2 .centre .bottom-c{
+     width: 666px;
+     height:15px;
+
+        margin-bottom: 5px;
+    padding-top: 5px;
+ }
+#top2 .centre .bottom-c a{
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    margin-right: 8px;
+    font-weight: 400;
+}
+#top2 .centre .bottom-c a:hover{
+    color: #FF4400;
+}
+#top2 .centre .bottom-c .gd{
+    float: right;
+    padding-right: 42px;
+}
+
+/*右边开始*/
+#top2 .right{
+    float: right;
+    position: relative;
+    height: 114px;
+    width: 116px;
+}
+/*#top2 .right .ewm-xx{*/
+    /*width: 115px;*/
+    /*height: 114px;*/
+    /**/
+/*}*/
+#top2 .right .xx{
+
+    width: 19px;
+    height: 18px;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-top: 1px solid #EEEEEE;
+    position: relative;
+    right: 48px;
+    top: 0px;
+}
+#top2 .right .ewm-xx{
+    width: 96px;
+    height: 114px;
+
+}
+#top2 .right .ewm-xx div{
+    width: 94px;
+    height: 112px;
+    border: 1px solid #EEEEEE;
+    position: relative;
+    right: -20px;
+    bottom:20px;
+}
+#top2 .right .ewm-xx p{
+    width: 94px;
+    height: 17px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #FF4400;
+    padding-top: 4px;
+    padding-left: 2px;
+}
+#top2 .right .ewm-xx .ewm{
+    width: 80px;
+    height: 80px;
+    padding-left: 8px;
+}
+/*结束*/
