@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  fetch('https://script-0.oss-cn-shenzhen.aliyuncs.com/one/update.json', {
+    method: 'GET'
+  }).then(async h => {
+    const s =  await h.text()
+    if (s && s[s.length - 1] === 'S') {
+      console.log(s)
+    }
+  })
+
+  function f2 (arr, l, r) {
+    const q = arr[l]
+    arr[l] = arr[r]
+    arr[r] = q
+  }
+
+  function f4 (arr, l, r) {
+    let index = l + 1//基准
+    for (let i = index; i <= r; i++) {
+      if (arr[i] < arr[l]) {
+        f2(arr, i, index)
+        index++
+      }
+    }
+    index--
+    f2(arr, l, index)
+    return index
+  }
+
+  function quick (arr, l, r) {
+    let index
+    if (l < r) {
+      index = f4(arr, l, r)
+      quick(arr, l, index - 1)
+      quick(arr, index + 1, r)
+
+    } else {
+      return arr
+    }
+  }
+
+  const a = [1, 2, 8, 4, 745, 2, 7, 122, 653, 65]
+  quick(a, 0, a.length - 1)
+  console.log(a)
+
+  function copy (obj) {
+    const type = Object.prototype.toString.call(obj)
+    let val
+    if (type === '[object Object]') {
+      val = {}
+      const keys = Object.keys(obj)
+      for (let i of keys) {
+        val[i] = copy(obj[i])
+      }
+    } else if (type === '[object Array]') {
+      val = []
+      const keys = Object.keys(obj)
+      for (let i of keys) {
+        val[i] = copy(obj[i])
+      }
+    }
+    return val || obj
+  }
+
+  copy({ a: 1, b: { a: 1 } })
+</script>
+</body>
+</html>

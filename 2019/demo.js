@@ -10,7 +10,7 @@ function swap (arr, i, j) {
   arr[j] = a
 }
 
-function quick (array, left, right) {
+function quickSort (array, left, right) {
   function f1 (arr, l, r) {
     let index = l + 1
     for (let i = index; i <= r; i++) {
@@ -26,10 +26,10 @@ function quick (array, left, right) {
 
   return function (arr, l, r) {
     let index
-    if (l < r) {
-      index = f1(arr, l, r)
-      quick(arr, l, index - 1)
-      quick(arr, index + 1, r)
+    if (l < r) {// 如果l小于r
+      index = f1(arr, l, r) // 找到移动后的基准
+      quickSort(arr, l, index - 1)//对左边开始排序
+      quickSort(arr, index + 1, r)// 对右边开始排序
     } else {
       return arr
     }
@@ -88,4 +88,16 @@ function cha (arr, val, low, hig) {
   } else if (arr[index] < val) {
     return cha(arr, val, index + 1, hig)
   }
+}
+function f (arr) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+      if (arr[i][j]) {
+        console.log(1)
+        return '321false'
+      }
+    }
+    console.log(2)
+  }
+  return 'true321'
 }
