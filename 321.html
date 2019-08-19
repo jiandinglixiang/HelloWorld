@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="qwe()">123123</button>
+<script>
+    let s = 0
+    let ss = 0
+
+    function asd() {
+        return new Promise(function (resolve, reject) {
+            s++
+            resolve(s)
+        })
+    }
+
+
+    function qwe() {
+        for (let i = 0; i < 1000000; i++) {
+            f()
+        }
+        console.log(s)
+    }
+
+    async function f() {
+        const asas = await asd()
+        if (asas === 1) return
+        ss++
+    }
+</script>
+</body>
+</html>

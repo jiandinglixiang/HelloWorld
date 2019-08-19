@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="交换.js"></script>
+<script>
+    function maopao(arr) {
+        const index = arr.length
+        for (let i = 0; i < index; i++) {
+            for (let j = 0; j < index - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) swap(arr, j, j + 1)
+            }
+        }
+        return arr
+    }
+
+    console.log(maopao([123, 34, 31, 5, 576, 6, 2, 45, 6, 5, 65, 7856, 878, 98, 56]))
+
+    function quick(arr, l, r) {
+        let index
+        if (l < r) {
+            index = ff(arr, l, r)
+            quick(arr, l, index - 1)
+            quick(arr, index + 1, r)
+        }
+        return arr
+    }
+
+    function ff(arr, l, r) {
+        let index = l + 1
+        for (let i = index; i <= r; i++) {
+            if (arr[i] < arr[l]) {
+                swap(arr, i, index)
+                index++
+            }
+        }
+        index--
+        swap(arr, l, index)
+        return index
+    }
+
+    console.log(quick([123, 34, 31, 5, 576, 6, 2, 45, 6, 5, 65, 7856, 878, 98, 56], 0, 15))
+</script>
+</body>
+</html>

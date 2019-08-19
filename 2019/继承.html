@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 混合继承
+    function sub(name) {
+        this.name = name
+        this.click = function () {
+            console.log(name)
+        }
+    }
+
+    function f1(name) {
+        sub.call(this, name)
+    }
+
+    function newW(obj) {
+        const newObj = {}
+        newObj.__proto__ = obj.prototype
+        obj.call(newObj)
+        return newObj
+    }
+
+    function create(obj) {
+        function f() {
+        }
+
+        f.prototype = obj
+        return newW(f)
+    }
+
+    function init(sub, func) {
+        const prototype = create(sub.prototype)
+        prototype.constructor = func
+        func.prototype = prototype
+    }
+
+    init(sub, f1)
+    new f1(987987987).click()
+</script>
+</body>
+</html>

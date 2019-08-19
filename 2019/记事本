@@ -1,0 +1,45 @@
+1,深度拷贝-
+2,寄生组合继承-
+3,冒泡排序,快速排序
+4,二分查找,-树查找(值减去最小的结果)除(最大值减去最小值)*(最大下标减去最小下标)+最小下标
+(key-aee[l])/(arr[r]-arr[l])*(r-l)+l
+
+每个函数对象都有___proto__但是只有函数对象才有prototype
+___proto__ === 生成者的.prototype(他的引用)
+每个函数对象都有个prototype它是一个普通对象,它是函数对象自带的,
+{
+每个对象都有__proto__但是只有函数对象才有prototype
+隐氏原型等于生成者函数的prototype(是生成者函数prototype的引用)
+每个函数对象都有个prototype它是一个普通对象,他是函数自带的
+}
+
+函数对象.prototype = {constructor:函数对象 = {(prototype:函数对象.prototype),__proto__},...}
+
+它包含了构造函数constructor和其他属性
+
+new 做了什么
+三件事
+第一件创建 {}
+关联原型链 {}.__proto__ = 函数对象.prototype
+修改函数对象的this指向{}
+{
+new 做了什么?
+三件事
+第一件事创建新对象 obj = {}
+第二 新对象的隐士原型 = 函数对象的prototype
+{}.call(obj)
+
+}
+
+https://api.weixin.qq.com/sns/oauth2/access_token?appid=wxd32b4e7c28f0800a&secret=b1bec580c04e74f0bc6596ac608b8f74&code=001nel9i2oVZbC0C9mai2aLe9i2nel9p&grant_type=authorization_code
+
+https://api.weixin.qq.com/sns/userinfo?access_token=19_oYqRS8x_nrl0_qhfz4EEBWBtjEjfNF2O1UUneOKdNWIagh68Ye8z7RJGc9a3OZQ9eLsvkfFNLnROeju0BOvvCw&openid=oqrr55gtENXNXxcCThmKMwL9DgmY&lang=zh_CN
+
+https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=19_Hi0Nqtoj1yLb0VcLKzzdDnVaSpjHOGACa5t92MOcBhvZhuqRzv4sXx-4dhdEo3GijF0AZpYY5K8uYYovVXrf1w&type=jsapi
+> simple - 简单 egg 应用程序样板
+  microservice - 基于egg的微服务应用样板
+  sequelize - egg 带Sequelize的应用程序
+  ts - 简单 egg && typescript app 样板
+  empty - 空的 egg app 模板
+  plugin - egg 插件 模板
+  framework - egg 框架，骨架 boilerplate
